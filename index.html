@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Online Code Editor</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Interactive Online Code Editor</h1>
+    <p>Compile and preview HTML, CSS, and JavaScript code in real-time.code By Natnael Gizaw</p>
+  </header>
+
+  <main>
+    <div class="editor">
+      <div class="code-pane">
+        <h4>HTML</h4>
+        <textarea id="htmlCode" placeholder="HTML code..."></textarea>
+      </div>
+
+      <div class="code-pane">
+        <h4>CSS</h4>
+        <textarea id="cssCode" placeholder="CSS code..."></textarea>
+      </div>
+
+      <div class="code-pane">
+        <h4>JavaScript</h4>
+        <textarea id="jsCode" placeholder="JavaScript code..."></textarea>
+      </div>
+
+      <div class="output-container">
+        <h4>Output</h4>
+        <iframe id="outputFrame" src=""></iframe>
+      </div>
+    </div>
+
+    <button class="run-button" onclick="runCode()">Run</button>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
